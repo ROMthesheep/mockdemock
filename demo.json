@@ -17,7 +17,7 @@
       "responses": [
         {
           "uuid": "bf92b192-c98b-4140-a43c-59a29ce8a627",
-          "body": "{\n  \"msg\": \"que dise er tio\",\n  \"msg2\" : \"Antonio espabila mostro\"\n}",
+          "body": "{\n  \"msg\": \"que dise er tio\",\n  \"msg2\" : \"Jonas espabila la puta madre\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -48,7 +48,7 @@
       "responses": [
         {
           "uuid": "517327c1-e5ae-441b-8b6a-7937b362cb89",
-          "body": "{\"msg\": \"tontito pero muchisimo\"}",
+          "body": "{\"msg\": \"tontito\"}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
