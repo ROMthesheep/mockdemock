@@ -1,0 +1,172 @@
+{
+  "uuid": "e2fffec5-99ca-415f-8abc-60c777b56486",
+  "lastMigration": 33,
+  "name": "Demo API",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "aefeae86-5dc1-484d-a67f-f8e0cf1f3b90",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "ey",
+      "responses": [
+        {
+          "uuid": "bf92b192-c98b-4140-a43c-59a29ce8a627",
+          "body": "{\n  \"msg\": \"que dise er tio\",\n  \"msg2\" : \"Jonas espabila\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": "RANDOM",
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "d55bba74-99d7-48a4-9278-596674439660",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "tonto",
+      "responses": [
+        {
+          "uuid": "517327c1-e5ae-441b-8b6a-7937b362cb89",
+          "body": "{\"msg\": \"tontito\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "dec0484c-f687-415f-8d0f-4b3b53009c7b",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "posteame/esta",
+      "responses": [
+        {
+          "uuid": "fba432e4-abb5-4c7a-8b56-273d6d7a2f40",
+          "body": "{\"msg\" : \"illo illo illo illo\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "aefeae86-5dc1-484d-a67f-f8e0cf1f3b90"
+    },
+    {
+      "type": "route",
+      "uuid": "d55bba74-99d7-48a4-9278-596674439660"
+    },
+    {
+      "type": "route",
+      "uuid": "dec0484c-f687-415f-8d0f-4b3b53009c7b"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [
+    {
+      "uuid": "ed705461-34f5-425d-8d2c-fd017fd58d95",
+      "id": "eqxe",
+      "name": "Users",
+      "documentation": "",
+      "value": "[\n  {{#repeat 50}}\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"username\": \"{{faker 'internet.userName'}}\"\n  }\n  {{/repeat}}\n]"
+    }
+  ],
+  "callbacks": []
+}
