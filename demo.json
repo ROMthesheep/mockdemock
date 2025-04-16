@@ -17,7 +17,7 @@
       "responses": [
         {
           "uuid": "bf92b192-c98b-4140-a43c-59a29ce8a627",
-          "body": "{\n  \"msg\": \"que dise er tio\",\n  \"msg2\" : \"Antonio espabila la puta madre\"\n}",
+          "body": "{\n  \"msg\": \"que dise er tio\",\n  \"msg2\" : \"David espabila la puta madre\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
